@@ -49,7 +49,7 @@ int main()
 
 void getData(ifstream& inFile, studentType sList[], int listSize)
 {
-	for (int i = 0, i < listSize, i++)
+	for (int i = 0; i < listSize; i++)
 		inFile >> sList[i].studentFName >> sList[i].studentLName >> sList[i].testScore;
 }
 
@@ -57,7 +57,7 @@ void calculateGrade(studentType sList[], int listSize)
 {
 	for (int i = 0; i < listSize; i++)
 	{
-		switch (sList[i], testScore / 10)
+		switch (sList[i].testScore / 10)
 		{
 		case 10:
 		case 9:
